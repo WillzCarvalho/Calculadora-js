@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculator">
+        <input class="display">
+
+        <button class="orange-font-btn" onclick="clearScreen()">AC</button>
+        <button class="orange-font-btn" onclick="deleteLast()"><img src="src/assets/backspace.png" alt="icon-backspace" class="icon">
+        </button>
+        <button class="orange-font-btn" onclick="addCaracter('%')">%</button>
+        <button class="orange-font-btn" onclick="addCaracter('/')">/</button>
+        <button class="white-font-btn" onclick="addCaracter('7')">7</button>
+        <button class="white-font-btn" onclick="addCaracter('8')">8</button>
+        <button class="white-font-btn" onclick="addCaracter('9')">9</button>
+        <button class="orange-font-btn" onclick="addCaracter('*')">x</button>
+        <button class="white-font-btn" onclick="addCaracter('4')">4</button>
+        <button class="white-font-btn" onclick="addCaracter('5')">5</button>
+        <button class="white-font-btn" onclick="addCaracter('6')">6</button>
+        <button class="orange-font-btn" onclick="addCaracter('-')">-</button>
+        <button class="white-font-btn" onclick="addCaracter('1')">1</button>
+        <button class="white-font-btn" onclick="addCaracter('2')">2</button>
+        <button class="white-font-btn" onclick="addCaracter('3')">3</button>
+        <button class="orange-font-btn" onclick="addCaracter('+')">+</button>
+        <button class="orange-font-btn" onclick="invert()">±</button>
+        <button class="white-font-btn" onclick="addCaracter('0')">0</button>
+        <button class="orange-font-btn" onclick="addCaracter('.')">.</button>
+        <button class="white-font-equal-btn" onclick="calculate()">=</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
